@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang ="es">
+<head>
+    
+    <style>
+
+        
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+    body{
+
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    cursor: grab;
+
+    }
+
+    #Enviar2{
+
+        background-color: aquamarine; 
+        color: white; 
+        border: 0px; 
+        border-radius: 10px; 
+        padding: 10px;
+
+    }
+
+    #Enviar2:hover{
+
+        background-color: brown;
+        cursor: grabbing;
+
+    }
+
+
+    </style>
+
+</head>
+
+<body>
+<h1>Pratica 5</h1>
+
+    <form action = "">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" required name = "nombre" id="nombre">
+        <br><br><br>
+        <label for="nombre">Apellido:</label>
+        <input type="text" name = "nombre" id="nombre">
+        <br><br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+    <hr>
+    <form action = "" name ="forma2">
+        <fieldset style="background-color: darkcyan;">
+        <label for="nombre2">Nombre:</label>
+        <input type="text" required name = "nombre" id="nombre">
+        <br><br><br>
+        <label for="apellido2">Apellido:</label>
+        <input type="text" name = "nombre" id="nombre">
+        <br><br><br>
+        <label for="correo">Correo:</label>
+        <input type="email" required name ="correo" id = "correo" placeholder="ejemplo@123.com">
+        <input type="submit" value="Enviar" id = "Enviar2" >
+        <br><br>
+        <label for = "lenguaje">Selecciona un lenguaje:</label>
+        <br><br>
+        <label for="paises">Paises que li aha visitado:</label>
+        <input type="radio" name = "lenguaje" id = "html">HTML
+        <input type="radio" name = "lenguaje" id = "html">JavaScript
+        <input type="radio" name = "lenguaje" id = "html">CSS
+        <br><br>
+        <label for = "coche">Selecciona un coche:</label>
+        <br><br>
+       <select name="coche" id="">
+        <option value="1">Renault</option>
+        <option value="2">Bmo</option>
+        <option value = "3">Rivian</option>
+       </select>
+        <br><br>
+        <label for="color">Color:</label>
+       <input type = "color">
+
+       <label for="fecha">Fecha:</label>
+       <input type="date" name = "fecha" id = "fecha">
+
+       <label for="hora">Hora:</label>
+       <input type="time" name = "hora">
+
+    </fieldset>
+
+    </form>
+
+
+</body>
+</html>
