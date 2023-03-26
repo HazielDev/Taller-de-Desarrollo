@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9</title>
+
+    <style>
+
+        body{
+
+            animation: colores 1s infinite;
+        }
+
+        @keyframes colores{
+
+            0%{
+                background: rgb(255, 34, 5);
+            }
+            
+            25%{
+                background: rgb(37, 22, 172);
+            }
+
+            50%{
+                background: rgb(172, 22, 104);
+            }
+            
+
+            100%{
+                background: rgb(255, 0, 0);
+            }
+
+        }  
+        
+        h1{
+
+            text-align: center;
+            padding-top: 300px;
+            text-decoration-color: white;
+            color: aliceblue;
+        }
+
+        .cuadro_multi{
+
+            background: rgb(255, 255, 255);
+            position: absolute;
+            animation: multi 2s infinite;
+
+        }
+
+        #cuadro_multi1{
+
+            width: 150px;
+            height: 150px;
+            top: 500px;
+
+        }
+
+        @keyframes multi {
+
+            0%{
+                top:500px;
+                left: 10px;
+            }
+
+            25%{
+                background: yellowgreen;
+                left: 10px;
+                top: 20px;
+                height: 100%;
+
+            }
+
+            30%{
+                height: 150px;
+                left: 10px;
+                top: 20px;
+            }
+
+            50%{
+                background: rgb(10, 204, 162);
+                top: 20px;
+                left: 1200px;
+            }
+
+            75%{
+                background: blue;
+                top: 500px;
+                left: 1200px;
+            }
+
+            100%{
+                top:500px;
+                left: 10px;
+            }
+
+            }
+
+        .cuadro_rojo{
+
+            background: rgb(248, 224, 4);
+            position: absolute;
+            animation: mueverojo 5s infinite;
+
+        }
+
+        #cuadro_rojo1{
+
+            width: 100px;
+            height: 100px;
+            top: 50px;
+
+        }
+
+        .cuadro_blanco{
+
+            background: white;
+            position: absolute;
+            animation: mueve 5s infinite;
+        }
+
+        #cuadro_blanco1{
+
+            width: 100px;
+            height: 100px;
+            top: 50px;
+
+        }
+
+        #cuadro_blanco2{
+
+            width: 100px;
+            height: 100px;
+            left: 100px;
+
+        }
+
+        @keyframes mueve{
+
+            from {
+                left: 0px;
+            }
+
+            to{
+                left: 1200px;
+            }
+
+        }
+
+        @keyframes mueverojo {
+
+            0%{
+                left: 50px;  top: 50px;
+            }
+
+            50%{
+                left: 300px; width: 1000px; top: 50px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Felicidades por tu CUMpleaños</h1>
+    <div id="cuadro_blanco1" class="cuadro_blanco"></div>
+    <div id="cuadro_blanco2" class="cuadro_blanco"></div>
+    <div id="cuadro_rojo1" class="cuadro_rojo"></div>
+    <div id="cuadro_multi1" class="cuadro_multi"></div>
+
+</body>
+
+</html>
